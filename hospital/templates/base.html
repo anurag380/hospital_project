@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% load static %}
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{% block title %}{% endblock title %}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static '/css/style.css' %}">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+
+    </head>
+    <body style="background-color:honeydew;">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <img src="https://bmhheal.com/images/bmh_logo.png" width=90px><h2 style="color:gold;  margin-left:10px; font-family: 'Alfa Slab One', cursive; text-shadow:2px 4px black"><i> &nbsp BMH HOSPITAL</i></h2>
+            <img src="https://www.logolynx.com/images/logolynx/e1/e108518a721ce7d9cfbe1c0fc8fc5d2e.png" width=50px>
+            <div class="collapse navbar-collapse" id="navbarText" style="font-family: 'Concert One', cursive; margin-left:50px ;">
+              <ul class="navbar-nav mr-auto" id="nav">
+                <li class="nav-item" style="margin-right:20px">
+                  <a class="nav-link" href="{% url "home" %}">Home</a>
+                </li>
+                <li class="nav-item" style="margin-right:20px">
+                  <a class="nav-link" href="{% url "about" %}">About</a>
+                </li>
+                <li class="nav-item" style="margin-right:20px">
+                  <a class="nav-link" href="{% url 'book' %}">Booking</a>
+                </li>
+                <li class="nav-item" style="margin-right:20px">
+                    <a class="nav-link" href="{% url 'doct' %}">Doctors</a>
+                  </li>
+                  <li class="nav-item" style="margin-right:20px">
+                    <a class="nav-link" href="{% url 'dep' %}">Departments</a>
+                  </li>
+                  <li class="nav-item" style="margin-right:20px">
+                    <a class="nav-link" href="{% url 'cont' %}">Contact Us</a>
+                  </li>      
+              </ul>
+              <span class="navbar-text" style="color:lightgreen ; text-shadow:2px 2px black">
+                <img src="https://www.freepnglogos.com/uploads/ambulance-png/ambulance-interests-the-school-counselor-kind-8.png" width=50px>
+                <i>FOR EMERGENCY <h5>DIAL - +7412589630</h5></i>
+              </span>
+            </div>
+          </nav>
+
+          {% block content%} {% endblock content %}
+
+          <br>
+          <br>
+
+          <div>
+            <ul style="list-style-type:none;background:#1f75fe;display:flex;color:white;">
+              <li style="margin-right:100px"><img src="https://babymhospital.org/wp-content/uploads/2020/11/logo.png"></li>
+              <li style="margin-right:50px"><img src="https://cdn-icons-png.flaticon.com/512/455/455705.png" width=30px> <b> GIVE US A CALL <br><h5><i><a href="#" style="color:gold"> &nbsp &nbsp +123458769</a></i></h5></b></li>
+              <li><img src="https://cdn-icons-png.flaticon.com/512/761/761755.png" width=30px> <b>EMAIL US<br><h5><i><a href="#" style="color:gold">&nbsp info@bmh.org</a></i></h5></b></li>
+              <li style="margin-left:250px;color:white"><b><i> © 2021 Baby Memorial Hospital Ltd. All rights reserved.</b></i>
+            </ul>
+          </div>
+
+        <script src="" async defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    </body>
+</html>

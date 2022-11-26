@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Departments{% endblock title %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Dangrek&family=Exo+2:ital,wght@0,600;1,300&family=Rubik+Microbe&family=Secular+One&display=swap" rel="stylesheet">
+
+<br>
+
+<h1 class="mx-auto text-center" style="font-family: 'Carter One', cursive; color:red; text-shadow:3px 2px black;"><u>OUR DEPARTMENTS</u></h1>
+<br>
+
+{% for i in dep %}
+
+<div class="mx-auto text-center bg-success w-75" style="margin-top:25px;border-bottom:8px solid black;">
+    <h3 class="text-light" style="font-family: 'Carter One', cursive;"><u>{{i.dep_name}}</u></h3><br>
+    <h5 style="line-height:40px; font-family: 'Secular One', sans-serif; color:black">{{i.dpt_descriptiion}}</h5><br>
+    
+</div>
+
+{% endfor %}
+
+{% endblock content %}

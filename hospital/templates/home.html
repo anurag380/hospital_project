@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title%}
+{% block content %}
+
+<link href="https://fonts.googleapis.com/css2?family=Dangrek&family=Exo+2:ital,wght@0,600;1,300&family=Rubik+Microbe&family=Secular+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+
+<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner h-50vh">
+      <div class="carousel-item active" data-interval="10000" style="height:75vh">
+        <img src="https://babymhospital.org/wp-content/uploads/2020/10/BMHHomeWebsiteslider.jpg
+        " class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item " data-interval="2000" style="height:75vh">
+        <img src="https://www.healthcareersinfo.net/wp-content/uploads/2015/06/iStock_000027007877_Full_cropsm_edited-1.jpg
+        " class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item " data-interval="2000" style="height:75vh">
+        <img src="https://www.joonsquare.com/usermanage/image/business/baby-memorial-hospital-kozhikode-8426/baby-memorial-hospital-kozhikode-bmh-1.jpg
+        " class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item " data-interval="2000" style="height:75vh">
+        <img src="https://th.bing.com/th/id/R.8288fe30828cd07a5ee1bd3fece3fea1?rik=PyC3L0b2MR33VA&riu=http%3a%2f%2fwww.a-p.com%2fmedia%2fFacebook-Image-29.jpg&ehk=tRnPSHTzibj%2f3iii%2f50hGVulNOuVI2r8I82rhG7PpRI%3d&risl=&pid=ImgRaw&r=0
+        " class="d-block w-100" alt="...">
+      </div>  
+    </div>
+    <button class="carousel-control-prev" type="button" data-target="#carouselExampleInterval" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleInterval" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+  </div>
+<br>
+<br>
+
+
+  <div>
+    <ul style="list-style-type:none; display:flex; ">
+        <li style="color:red"><h1><b><i>The vision 'affordable, accessible and quality healthcare for  all'</b></i></h1></li>
+        <li><h4 id="test" style="line-height:50px; color:black; font-family: 'Secular One', sans-serif; margin-left:20px">Driven by passion to create benchmarks in the field of healthcare, BMH was formed in 1987 as a modest 52 bed facility. We had a dream to meet the growing healthcare needs of people in the region and a mission to make superior healthcare facilities available to the masses at affordable cost.
+
+            With the blessings of the Almighty and the relentless commitment by a team of professionals along with following ethical practices in every realm of healthcare and the unstinted support and patronage of our patients, BMH is now a multi specialty, tertiary care, referral hospital, running as a Public Limited Company.
+            
+        </h4>
+    </ul>
+  </div>
+
+
+<div style="display:flex ; justify-content:center; font-family: 'Secular One', sans-serif;">
+  <div class="card" style="width: 20rem;margin-right:80px;border:3px solid black">
+    <img src="https://babymhospital.org/wp-content/uploads/2020/09/latest-news.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h3 class="card-title text-success">Latest Updates</h3>
+      <p class="card-text">Get up to date on what's happening at Baby Memorial Hospital. Upcoming events, awareness classes, seminars, etc.</p>
+      <a href="#" class="btn btn-primary">KNOW MORE</a>
+    </div>
+  </div>
+  <div class="card" style="width: 20rem;margin-right:80px;border:3px solid black">
+    <img src="https://babymhospital.org/wp-content/uploads/2020/09/patient-awareness.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h3 class="card-title text-success">Patient Awareness</h3>
+      <p class="card-text">Knowing about a disease is the first step towards healthy living. Know more about various diseases from our specialists. Read articles, watch videos, stay informed.</p>
+      <a href="#" class="btn btn-primary">KNOW MORE</a>
+    </div>
+  </div>
+  <div class="card" style="width: 20rem;margin-right:80px;border:3px solid black">
+    <img src="https://babymhospital.org/wp-content/uploads/2020/09/facilities.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h3 class="card-title text-success">Services and Facilities</h3>
+      <p class="card-text">BMH has always strived to provide the very best in services and world class facility to the community. Find out more about the services and facilities available at BMH.</p>
+      <a href="#" class="btn btn-primary">KNOW MORE</a>
+    </div>
+  </div>
+</div>
+
+{% endblock content%}

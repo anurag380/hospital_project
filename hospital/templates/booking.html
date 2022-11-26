@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title %}Booking{% endblock title %}
+{% block content %}
+
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@1&display=swap" rel="stylesheet">
+<br>
+<h1 class="text-center text-success" style="font-family: 'Chakra Petch', sans-serif; text-shadow:2px 1px black;"><b>MAKE AN APPOINMENT</b></h1>
+<hr>
+
+<div class="container w-50 text-center bg-warning p-4" style="font-family: 'Chakra Petch', sans-serif; border:3px solid black">
+    <form action="" method='POST'>
+        {% csrf_token %}
+        <h5><b>{{form|crispy}}<b></h5>
+        <button type="submit" class="btn btn-outline-success btn-light"><b>SUBMIT<b></button>
+    </form>
+
+</div>    
+
+
+{% endblock content %}

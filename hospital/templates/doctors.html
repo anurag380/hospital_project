@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Doctors{% endblock title %}
+{% block content %}
+
+<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+
+<br>
+<h1 class="mx-auto text-center" style="font-family: 'Bungee', cursive; color:red; text-shadow:3px 2px black;"><u>OUR DOCTORS</u></h1>
+
+<div class="d-flex">
+{% for i in doc %}
+     <div class="card mx-auto text-center" style="width:12rem; margin-top:20px; border:4px solid black">
+        <img src="{{i.doc_image.url}}" class="card-img-top" alt="..."><br>
+        <div class="card-body" style="font-family: 'Aclonica', sans-serif;">
+          <h4 class="card-title">Dr. {{i.doc_name}}</h4><hr>
+          <p class="card-text">{{i.doc_spec}}</p>
+          <p class="card-text">{{i.dpt_name}}</p>
+        </div>
+      </div> 
+     
+
+{% endfor %}
+</div>
+
+{% endblock content %}
