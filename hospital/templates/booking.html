@@ -13,7 +13,7 @@
 <div class="container w-50 text-center bg-warning p-4" style="font-family: 'Chakra Petch', sans-serif; border:3px solid black">
     <form action="" method='POST'>
         {% csrf_token %}
-        <h5><b>{{form|crispy}}<b></h5>
+        <h5><b>{{form | crispy }}<b></h5>
         <button type="submit" class="btn btn-outline-success btn-light"><b>SUBMIT<b></button>
     </form>
 
